@@ -44,8 +44,8 @@ def over?(board)
 end
 
 def winner(board)
-  binding.pry
   if winning_combo = won?(board)
+    binding.pry
     board[winning_combo]
   end
   # if draw?(board) == nil && won?(board)
