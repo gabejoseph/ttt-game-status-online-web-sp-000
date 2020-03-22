@@ -45,9 +45,12 @@ end
 
 def winner(board)
   binding.pry
-  if draw?(board) == nil && won?(board)
-    return "X"
-  else draw?(board) == nil 
-    return nil
+  if winning_combo = won?(board)
+    board[winning_combo]
   end
+  # if draw?(board) == nil && won?(board)
+  #   return "X"
+  # else draw?(board) == nil 
+  #   return nil
+  # end
 end
