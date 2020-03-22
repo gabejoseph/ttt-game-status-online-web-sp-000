@@ -45,7 +45,7 @@ end
 
 def winner(board)
   binding.pry
-  if draw?(board) == nil && won?(board).any? == "X"
+  if draw?(board) == nil && won?(board) == "X"
     return "X"
   else draw?(board) == nil 
     return nil
